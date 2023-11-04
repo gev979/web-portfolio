@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint --max-warnings 0",
     "ts:typecheck": "tsc --noEmit -p tsconfig.json",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "postbuild": "next-sitemap"
   },
   "lint-staged": {
     "*.(ts|tsx)": [
@@ -26,6 +27,7 @@
     "clsx": "^1.2.1",
     "framer-motion": "^10.12.17",
     "next": "13.4.8",
+    "next-sitemap": "^4.2.3",
     "postcss": "8.4.24",
     "react": "18.2.0",
     "react-dom": "18.2.0",
